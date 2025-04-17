@@ -1,0 +1,353 @@
+@media (min-width: 1401px) and (max-width: 1920px) {
+    .project_card {
+        width: 45.5vw;
+        height: 18vw;
+        max-height: 18vw;
+        background-color: #1E1E1E;
+        border-radius: 20px;
+        display: grid;
+        grid-area: auto;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+
+    .card_title {
+        color: #FFFFFF;
+        font-family: var(--font-lexend-700);
+        font-weight: 700;
+        font-size: 2rem;
+        width: 15.5vw;
+        height: auto;
+        padding: 1.5rem 0 0 1.5rem;
+        grid-row: 1;
+        grid-column: 1;
+    }
+
+    .card_number {
+        background: #0072BC;
+        background: linear-gradient(180deg, rgba(0, 114, 188, 1) 25%, rgba(0, 0, 0, 0) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: var(--font-lexend-400);
+        font-weight: 400;
+        font-size: 18.75rem;
+        width: fit-content;
+        height: 100%;
+        grid-row: 2;
+        grid-column: 1;
+        position: relative;
+        bottom: 4.75rem;
+        right: 2.25rem;
+    }
+
+    .card_description {
+        color: #B8B8B8;
+        font-family: var(--font-lexend-400);
+        font-weight: 400;
+        font-size: 1.25rem;
+        width: 24.9vw;
+        height: fit-content;
+        margin-top: 8rem;
+        margin-left: auto;
+        padding: 0 1.5rem 1.5rem 0;
+        grid-row: 2;
+        grid-column: 2;
+        align-self: self-start;
+    }
+}
+
+@media (min-width: 1281px) and (max-width: 1400px) {
+    .project_card {
+        width: 45.5vw;
+        height: 18vw;
+        max-height: 18vw;
+        background-color: #1E1E1E;
+        border-radius: 20px;
+        display: grid;
+        grid-area: auto;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+
+    .card_title {
+        color: #FFFFFF;
+        font-family: var(--font-lexend-700);
+        font-weight: 700;
+        font-size: 1.5rem;
+        width: 15.5vw;
+        height: auto;
+        padding: 1.5rem 0 0 1.5rem;
+        grid-row: 1;
+        grid-column: 1;
+    }
+
+    .card_number {
+        background: #0072BC;
+        background: linear-gradient(180deg, rgba(0, 114, 188, 1) 25%, rgba(0, 0, 0, 0) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: var(--font-lexend-400);
+        font-weight: 400;
+        font-size: 13rem;
+        width: fit-content;
+        height: 100%;
+        grid-row: 2;
+        grid-column: 1;
+        position: relative;
+        bottom: 3.75rem;
+        right: 1.75rem;
+    }
+
+    .card_description {
+        color: #B8B8B8;
+        font-family: var(--font-lexend-400);
+        font-weight: 400;
+        font-size: 1rem;
+        width: 24.9vw;
+        height: fit-content;
+        margin-top: 4.5rem;
+        margin-left: auto;
+        padding: 0 1.5rem 1.5rem 0;
+        grid-row: 2;
+        grid-column: 2;
+        align-self: self-start;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .project_card {
+        width: 45.5vw;
+        height: 18vw;
+        max-height: 18vw;
+        background-color: #1E1E1E;
+        border-radius: 20px;
+        display: grid;
+        grid-area: auto;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+
+    .card_title {
+        color: #FFFFFF;
+        font-family: var(--font-lexend-700);
+        font-weight: 700;
+        font-size: 1.25rem;
+        width: 15.5vw;
+        height: auto;
+        padding: 1.5rem 0 0 1.5rem;
+        grid-row: 1;
+        grid-column: 1;
+    }
+
+    .card_number {
+        background: #0072BC;
+        background: linear-gradient(180deg, rgba(0, 114, 188, 1) 25%, rgba(0, 0, 0, 0) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: var(--font-lexend-400);
+        font-weight: 400;
+        font-size: 12rem;
+        width: fit-content;
+        height: 100%;
+        grid-row: 2;
+        grid-column: 1;
+        position: relative;
+        bottom: 2rem;
+        right: 1rem;
+    }
+
+    .card_description {
+        color: #B8B8B8;
+        font-family: var(--font-lexend-400);
+        font-weight: 400;
+        font-size: 1rem;
+        width: 24.9vw;
+        height: fit-content;
+        margin-top: 4.5rem;
+        margin-left: auto;
+        padding: 0 1.5rem 1.5rem 0;
+        grid-row: 2;
+        grid-column: 2;
+        align-self: self-start;
+    }
+}
+
+@media (min-width: 854px) and (max-width: 1024px) {
+    .project_card {
+        width: 45.5vw;
+        height: 18vw;
+        max-height: 18vw;
+        background-color: #1E1E1E;
+        border-radius: 20px;
+        display: grid;
+        grid-area: auto;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+
+    .card_title {
+        color: #FFFFFF;
+        font-family: var(--font-lexend-700);
+        font-weight: 700;
+        font-size: 1.25rem;
+        width: 100%;
+        height: auto;
+        padding: 1.5rem 0 0 1.5rem;
+        grid-row: 1;
+        grid-column: 1;
+        z-index: 3;
+    }
+
+    .card_number {
+        background: #0072BC;
+        background: linear-gradient(180deg, rgba(0, 114, 188, 1) 25%, rgba(0, 0, 0, 0) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: var(--font-lexend-400);
+        font-weight: 400;
+        font-size: 9rem;
+        width: fit-content;
+        height: 100%;
+        grid-row: 2;
+        grid-column: 1;
+        position: relative;
+        bottom: 3.75rem;
+        right: 1rem;
+        z-index: 2;
+    }
+
+    .card_description {
+        color: #B8B8B8;
+        font-family: var(--font-lexend-400);
+        font-weight: 400;
+        font-size: 1rem;
+        width: 24.9vw;
+        height: fit-content;
+        margin-top: 1rem;
+        margin-left: auto;
+        padding: 0 1.5rem 1.5rem 0;
+        grid-row: 2;
+        grid-column: 2;
+        align-self: self-start;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 853px) {
+    .project_card {
+        width: 45.5vw;
+        height: 18vw;
+        max-height: 18vw;
+        background-color: #1E1E1E;
+        border-radius: 20px;
+        display: grid;
+        grid-area: auto;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+
+    .card_title {
+        color: #FFFFFF;
+        font-family: var(--font-lexend-700);
+        font-weight: 700;
+        font-size: 1rem;
+        width: 100%;
+        height: auto;
+        padding: 1.5rem 0 0 1.5rem;
+        grid-row: 1;
+        grid-column: 1;
+        z-index: 3;
+    }
+
+    .card_number {
+        background: #0072BC;
+        background: linear-gradient(180deg, rgba(0, 114, 188, 1) 25%, rgba(0, 0, 0, 0) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: var(--font-lexend-400);
+        font-weight: 400;
+        font-size: 7.75rem;
+        width: fit-content;
+        height: 100%;
+        grid-row: 2;
+        grid-column: 1;
+        position: relative;
+        bottom: 3.25rem;
+        right: 0.5rem;
+        z-index: 2;
+    }
+
+    .card_description {
+        color: #B8B8B8;
+        font-family: var(--font-lexend-400);
+        font-weight: 400;
+        font-size: 0.75rem;
+        width: 24.9vw;
+        height: fit-content;
+        margin-top: 0.75rem;
+        margin-left: auto;
+        padding: 0 1.5rem 1.5rem 0;
+        grid-row: 2;
+        grid-column: 2;
+        align-self: self-start;
+    }
+}
+
+@media (max-width: 768px) {
+    .project_card {
+        width: 45.5vw;
+        height: 18vw;
+        max-height: 18vw;
+        background-color: #1E1E1E;
+        border-radius: 20px;
+        display: grid;
+        grid-area: auto;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+
+    .card_title {
+        color: #FFFFFF;
+        font-family: var(--font-lexend-700);
+        font-weight: 700;
+        font-size: 0.75rem;
+        width: 100%;
+        height: auto;
+        padding: 1.5rem 0 0 1.5rem;
+        grid-row: 1;
+        grid-column: 1;
+        z-index: 3;
+    }
+
+    .card_number {
+        background: #0072BC;
+        background: linear-gradient(180deg, rgba(0, 114, 188, 1) 25%, rgba(0, 0, 0, 0) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: var(--font-lexend-400);
+        font-weight: 400;
+        font-size: 7.75rem;
+        width: fit-content;
+        height: 100%;
+        grid-row: 2;
+        grid-column: 1;
+        position: relative;
+        bottom: 2.25rem;
+        right: 0.5rem;
+        z-index: 2;
+    }
+
+    .card_description {
+        color: #B8B8B8;
+        font-family: var(--font-lexend-400);
+        font-weight: 400;
+        font-size: 0.75rem;
+        width: 24.9vw;
+        height: fit-content;
+        margin-top: 1.5rem;
+        margin-left: auto;
+        padding: 0 1.5rem 1.5rem 0;
+        grid-row: 2;
+        grid-column: 2;
+        align-self: self-start;
+    }
+} 
