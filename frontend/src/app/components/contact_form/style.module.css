@@ -126,7 +126,6 @@
 
     .form_input {
         width: 100%;
-        height: calc(3.8vw - 3rem);
         font-family: var(--font-lexend-400);
         font-weight: 400;
         font-size: 1.25rem;
@@ -163,5 +162,343 @@
         font-family: var(--font-lexend-600);
         font-weight: 600;
         font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 1410px) {
+    .form_card {
+        background-color: #2D2D2D;
+        width: 41.5vw;
+        height: fit-content;
+        border-radius: 24px;
+    }
+
+    .form_title {
+        padding: 3rem 3rem 0;
+    }
+
+    .form_title h1 {
+        color: #FFFFFF;
+        font-family: var(--font-lexend-600);
+        font-weight: 600;
+        font-size: 2.5rem !important;
+        margin-top: 2.3rem;
+    }
+
+    .form_title img {
+        position: relative;
+        left: 8px;
+        top: 14px;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        padding: 3rem;
+    }
+
+    .form_sec {
+        width: 100%;
+    }
+
+    .form_sec span {
+        color: #db001d;
+        font-family: var(--font-lexend-400);
+        font-weight: 400;
+    }
+
+    .form_input {
+        width: 100%;
+        height: calc(3.8vw - 3rem);
+        font-family: var(--font-lexend-400);
+        font-weight: 400;
+        font-size: 1rem;
+        border-radius: 24px;
+        padding: 1.25rem;
+        border: transparent;
+    }
+
+    .email {
+        height: 5%;
+    }
+
+    .message {
+        height: 12.8vw;
+        resize: none;
+    }
+
+    .form_card h3 {
+        color: #FFFFFF;
+        font-family: var(--font-lexend-600);
+        font-weight: 600;
+        font-size: 1.25rem;
+        margin: 1.5rem 0;
+    }
+
+    .form_card button {
+        background-color: #0072BC;
+        color: #FFFFFF;
+        width: 100%;
+        height: 3.5vw;
+        margin: 3.5rem 0 3rem;
+        border-radius: 12px;
+        border: transparent;
+        font-family: var(--font-lexend-600);
+        font-weight: 600;
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 1092px) {
+    .form_card {
+        background-color: #2D2D2D;
+        width: 41.5vw;
+        height: fit-content;
+        border-radius: 24px;
+    }
+
+    .form_title {
+        padding: 3rem 3rem 0;
+    }
+
+    .form_title h1 {
+        color: #FFFFFF;
+        font-family: var(--font-lexend-600);
+        font-weight: 600;
+        font-size: 1.75rem !important;
+        margin-top: 2.3rem;
+    }
+
+    .form_title img {
+        position: relative;
+        left: 8px;
+        top: 14px;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        padding: 3rem;
+    }
+
+    .form_sec {
+        width: 100%;
+    }
+
+    .form_sec span {
+        color: #db001d;
+        font-family: var(--font-lexend-400);
+        font-weight: 400;
+    }
+
+    .form_input {
+        width: 100%;
+        height: calc(3.8vw - 3rem);
+        font-family: var(--font-lexend-400);
+        font-weight: 400;
+        font-size: 1rem;
+        border-radius: 24px;
+        padding: 1.25rem;
+        border: transparent;
+    }
+
+    .email {
+        height: 5%;
+    }
+
+    .message {
+        height: 12.8vw;
+        resize: none;
+    }
+
+    .form_card h3 {
+        color: #FFFFFF;
+        font-family: var(--font-lexend-600);
+        font-weight: 600;
+        font-size: 1rem;
+        margin: 1.5rem 0;
+    }
+
+    .form_card button {
+        background-color: #0072BC;
+        color: #FFFFFF;
+        width: 100%;
+        height: 3.5vw;
+        margin: 3.5rem 0 3rem;
+        border-radius: 12px;
+        border: transparent;
+        font-family: var(--font-lexend-600);
+        font-weight: 600;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .form_card {
+        background-color: #2D2D2D;
+        width: 70vw;
+        height: fit-content;
+        border-radius: 24px;
+        margin-top: 4rem;
+    }
+
+    .form_title {
+        padding: 3rem 3rem 0;
+    }
+
+    .form_title h1 {
+        color: #FFFFFF;
+        font-family: var(--font-lexend-600);
+        font-weight: 600;
+        font-size: 1.75rem !important;
+        margin-top: 2.3rem;
+    }
+
+    .form_title img {
+        position: relative;
+        left: 8px;
+        top: 14px;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        padding: 3rem;
+    }
+
+    .form_sec {
+        width: 100%;
+    }
+
+    .form_sec span {
+        color: #db001d;
+        font-family: var(--font-lexend-400);
+        font-weight: 400;
+    }
+
+    .form_input {
+        width: 100%;
+        height: calc(3.8vw - 3rem);
+        font-family: var(--font-lexend-400);
+        font-weight: 400;
+        font-size: 1rem;
+        border-radius: 24px;
+        padding: 1.25rem;
+        border: transparent;
+    }
+
+    .email {
+        height: 5%;
+    }
+
+    .message {
+        height: 12.8vw;
+        resize: none;
+    }
+
+    .form_card h3 {
+        color: #FFFFFF;
+        font-family: var(--font-lexend-600);
+        font-weight: 600;
+        font-size: 1rem;
+        margin: 1.5rem 0;
+    }
+
+    .form_card button {
+        background-color: #0072BC;
+        color: #FFFFFF;
+        width: 70%;
+        height: 6vw;
+        margin: 3.5rem auto 3rem;
+        border-radius: 12px;
+        border: transparent;
+        font-family: var(--font-lexend-600);
+        font-weight: 600;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 512px) {
+    .form_card {
+        background-color: #2D2D2D;
+        width: 90vw;
+        height: fit-content;
+        border-radius: 24px;
+        margin-top: 4rem;
+    }
+
+    .form_title {
+        padding: 2rem 2rem 0;
+    }
+
+    .form_title h1 {
+        color: #FFFFFF;
+        font-family: var(--font-lexend-600);
+        font-weight: 600;
+        font-size: 1.5rem !important;
+        margin-top: 2.3rem;
+    }
+
+    .form_title img {
+        position: relative;
+        left: 8px;
+        width: 20%;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 2rem;
+    }
+
+    .form_sec {
+        width: 100%;
+    }
+
+    .form_sec span {
+        color: #db001d;
+        font-family: var(--font-lexend-400);
+        font-weight: 400;
+    }
+
+    .form_input {
+        width: 100%;
+        height: calc(3.8vw - 3rem);
+        font-family: var(--font-lexend-400);
+        font-weight: 400;
+        font-size: 1rem;
+        border-radius: 24px;
+        padding: 1rem;
+        border: transparent;
+    }
+
+    .email {
+        height: 5%;
+    }
+
+    .message {
+        height: 30vw;
+        resize: none;
+    }
+
+    .form_card h3 {
+        color: #FFFFFF;
+        font-family: var(--font-lexend-600);
+        font-weight: 600;
+        font-size: 1rem;
+        margin: 1.5rem 0;
+    }
+
+    .form_card button {
+        background-color: #0072BC;
+        color: #FFFFFF;
+        width: 75%;
+        height: 13vw;
+        margin: 3.5rem auto 3rem;
+        border-radius: 12px;
+        border: transparent;
+        font-family: var(--font-lexend-600);
+        font-weight: 600;
+        font-size: 1rem;
     }
 }

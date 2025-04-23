@@ -73,3 +73,117 @@
         margin-top: 2%;
     }
 }
+
+@media (max-width: 1410px) {
+    #members_main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 220px 0 0;
+    }
+
+    #members_text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #members_text h1 {
+        color: #323232;
+        font-family: var(--font-lexend-600);
+        font-weight: 600;
+        font-size: 3.5rem;
+    }
+
+    #members_text h2 {
+        color: #0062A7;
+        font-family: var(--font-lexend-400);
+        font-weight: 400;
+        font-size: 2.25rem;
+        margin: 24px 0 0;
+    }
+
+    .members_list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 90vw;
+        margin-top: 2%;
+    }
+}
+
+@media (max-width: 1092px) {
+    #members_main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 220px 0 0;
+    }
+
+    #members_text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #members_text h1 {
+        color: #323232;
+        font-family: var(--font-lexend-600);
+        font-weight: 600;
+        font-size: 2.5rem;
+    }
+
+    #members_text h2 {
+        color: #0062A7;
+        font-family: var(--font-lexend-400);
+        font-weight: 400;
+        font-size: 2rem;
+        margin: 24px 0 0;
+    }
+
+    .members_list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 90vw;
+        margin-top: 2%;
+    }
+}
+
+@media (max-width: 512px) {
+    #members_main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 220px 0 0;
+    }
+
+    #members_text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #members_text h1 {
+        color: #323232;
+        font-family: var(--font-lexend-600);
+        font-weight: 600;
+        font-size: 2rem;
+    }
+
+    #members_text h2 {
+        color: #0062A7;
+        font-family: var(--font-lexend-400);
+        font-weight: 400;
+        font-size: 1.5rem;
+        margin: 24px 0 0;
+    }
+
+    .members_list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 90vw;
+        margin-top: 5%;
+    }
+}

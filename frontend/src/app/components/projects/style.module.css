@@ -71,3 +71,115 @@
         margin-top: 30px;
     }
 }
+
+@media (max-width: 1410px) {
+    .projects_main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 220px 0 0;
+    }
+
+    #projects_text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #projects_text h1 {
+        color: #323232;
+        font-family: var(--font-lexend-600);
+        font-weight: 600;
+        font-size: 3rem;
+    }
+
+    #projects_text h2 {
+        color: #0062A7;
+        font-family: var(--font-lexend-400);
+        font-weight: 400;
+        font-size: 2.25rem;
+    }
+
+    #projects_content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.2rem;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 1092px) {
+    .projects_main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 220px 0 0;
+    }
+
+    #projects_text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #projects_text h1 {
+        color: #323232;
+        font-family: var(--font-lexend-600);
+        font-weight: 600;
+        font-size: 2.5rem;
+    }
+
+    #projects_text h2 {
+        color: #0062A7;
+        font-family: var(--font-lexend-400);
+        font-weight: 400;
+        font-size: 2rem;
+    }
+
+    #projects_content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 512px) {
+    .projects_main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 150px 0 0;
+    }
+
+    #projects_text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #projects_text h1 {
+        color: #323232;
+        font-family: var(--font-lexend-600);
+        font-weight: 600;
+        font-size: 2rem;
+    }
+
+    #projects_text h2 {
+        color: #0062A7;
+        font-family: var(--font-lexend-400);
+        font-weight: 400;
+        font-size: 1.45rem;
+        text-align: center;
+    }
+
+    #projects_content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 30px;
+    }
+}

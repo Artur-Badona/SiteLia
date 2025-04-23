@@ -46,12 +46,13 @@
 @media (max-width: 1920px) {
     .project_card {
         width: 45%;
-        height: fit-content;
+        height: 100%;
         background-color: #1E1E1E;
         border-radius: 20px;
         display: grid;
         grid-template-columns: 1fr 2fr;
         overflow: hidden;
+        align-self: self-end;
     }
 
     .card_title {
@@ -59,18 +60,19 @@
         font-family: var(--font-lexend-700);
         font-weight: 700;
         font-size: 2rem;
-        width: 35%;
-        height: auto;
-        padding: 2.75% 0 2.5% 2.75%;
+        width: 36%;
+        padding: 2.75% 0 2% 2.75%;
         grid-row: 1;
         grid-column: 1 / span 2;
     }
 
     .card_number {
-        grid-row: 2;
+        grid-row: 2 / span 1 ;
         grid-column: 1;
         align-self: self-end;
         justify-self: self-start;
+        width: auto;
+        height: 10vw;
     }
 
     .card_description {
@@ -80,6 +82,147 @@
         font-size: 1.25rem;
         padding: 4.25%;
         width: 90%;
+        text-align: justify;
+        grid-row: 2;
+        grid-column: 2;
+        align-self: self-end;
+        justify-self: self-end;
+    }
+}
+
+@media (max-width: 1410px) {
+    .project_card {
+        width: 45%;
+        height: 100%;
+        background-color: #1E1E1E;
+        border-radius: 20px;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        overflow: hidden;
+        align-self: self-end;
+    }
+
+    .card_title {
+        color: #FFFFFF;
+        font-family: var(--font-lexend-700);
+        font-weight: 700;
+        font-size: 1.75rem;
+        width: 45%;
+        padding: 2.75% 0 2% 2.75%;
+        grid-row: 1;
+        grid-column: 1 / span 2;
+    }
+
+    .card_number {
+        grid-row: 2 / span 1 ;
+        grid-column: 1;
+        align-self: self-end;
+        justify-self: self-start;
+        width: auto;
+        height: 10vw;
+    }
+
+    .card_description {
+        color: #B8B8B8;
+        font-family: var(--font-lexend-400);
+        font-weight: 400;
+        font-size: 1rem;
+        padding: 4.25%;
+        width: 100%;
+        text-align: justify;
+        grid-row: 2;
+        grid-column: 2;
+        align-self: self-end;
+        justify-self: self-end;
+    }
+}
+
+@media (max-width: 1092px) {
+    .project_card {
+        width: 45%;
+        height: 100%;
+        background-color: #1E1E1E;
+        border-radius: 20px;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        overflow: hidden;
+        align-self: self-end;
+    }
+
+    .card_title {
+        color: #FFFFFF;
+        font-family: var(--font-lexend-700);
+        font-weight: 700;
+        font-size: 1.5rem;
+        width: 45%;
+        padding: 2.75% 0 2% 2.75%;
+        grid-row: 1;
+        grid-column: 1 / span 2;
+    }
+
+    .card_number {
+        grid-row: 2 / span 1 ;
+        grid-column: 1;
+        align-self: self-end;
+        justify-self: self-start;
+        width: auto;
+        height: 10vw;
+    }
+
+    .card_description {
+        color: #B8B8B8;
+        font-family: var(--font-lexend-400);
+        font-weight: 400;
+        font-size: 0.75rem;
+        padding: 4.25%;
+        width: 100%;
+        text-align: justify;
+        grid-row: 2;
+        grid-column: 2;
+        align-self: self-end;
+        justify-self: self-end;
+    }
+}
+
+@media (max-width: 512px) {
+    .project_card {
+        width: 85%;
+        height: 100%;
+        background-color: #1E1E1E;
+        border-radius: 20px;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        overflow: hidden;
+        align-self: self-end;
+    }
+
+    .card_title {
+        color: #FFFFFF;
+        font-family: var(--font-lexend-700);
+        font-weight: 700;
+        font-size: 1.25rem;
+        width: 65%;
+        padding: 2.75% 0 4% 2.75%;
+        grid-row: 1;
+        grid-column: 1 / span 2;
+    }
+
+    .card_number {
+        grid-row: 2 / span 1 ;
+        grid-column: 1;
+        align-self: self-end;
+        justify-self: self-start;
+        width: auto;
+        height: 18vw;
+    }
+
+    .card_description {
+        color: #B8B8B8;
+        font-family: var(--font-lexend-400);
+        font-weight: 400;
+        font-size: 0.75rem;
+        padding: 4.25%;
+        width: 100%;
         text-align: justify;
         grid-row: 2;
         grid-column: 2;

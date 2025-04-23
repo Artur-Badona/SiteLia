@@ -10,8 +10,8 @@ export function Footer() {
                     <h1>Entrar em contato</h1>
                     <p>Caso precise de mais informações ou tenha alguma dúvida, não hesite em entrar em contato. Estamos à disposição para ajudar no que for necessário!</p>
                     <div id={styles.icon_quote}>
-                        <img src="icon_quote.svg" alt="quote" />
-                        <img src="icon_quote.svg" alt="quote" />
+                        <img id={styles.quotes} src="icon_quote.svg" alt="quote" />
+                        <img id={styles.quotes} src="icon_quote.svg" alt="quote" />
                     </div>
                     <h2>A cada linha de código e avanço em inteligência artificial, construímos hoje as soluções que vão transformar o amanhã.</h2>
                 </div>
@@ -25,14 +25,14 @@ export function Footer() {
 
             <div id={styles.footer_links}>
                 <div className={styles.links_sec}>
-                    <img src="unimar_logo.svg" alt="unimar_logo" />
+                    <img id={styles.unimar_logo} src="unimar_logo.svg" alt="unimar_logo" />
                     <h2>Av. Higino Muzi Filho, 1001</h2>
                     <a href="">+55 (14) 99849-2952</a>
                     <a href="">falecom@unimar.br</a>
                     <div id={styles.links_icons}>
-                        <a href=""><img src="youtube.svg" alt="" /></a>
-                        <a href=""><img src="facebook.svg" alt="" /></a>
-                        <a href=""><img src="whatsapp.svg" alt="" /></a>
+                        <a href=""><img className={styles.icons} src="youtube.svg" alt="" /></a>
+                        <a href=""><img className={styles.icons} src="facebook.svg" alt="" /></a>
+                        <a href=""><img className={styles.icons} src="whatsapp.svg" alt="" /></a>
                     </div>
                 </div>
                 <div className={styles.links_sec}>

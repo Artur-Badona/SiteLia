@@ -21,7 +21,7 @@ export function Header() {
       <header id="header" className={styles.header}>
         <div id={styles.header_bar} className={`${scrolled ? styles.scrolled : ''}`}>
           <HandleNav to="header" className={`${styles.nav_logo_link} ${scrolled ? styles.scrolled : ''}`}>LIA²</HandleNav>
-          <nav className={`${scrolled ? styles.scrolled : ''}`}>
+          <nav className={`${styles.navigation} ${scrolled ? styles.scrolled : ''}`}>
             <HandleNav to="about" className={`${scrolled ? styles.scrolled : ''} ${styles.nav_button}`}>Sobre</HandleNav>
             <HandleNav to="projects" className={`${scrolled ? styles.scrolled : ''} ${styles.nav_button}`}>Projetos</HandleNav>
             <HandleNav to="members" className={`${scrolled ? styles.scrolled : ''} ${styles.nav_button}`}>Membros</HandleNav>
@@ -40,7 +40,7 @@ export function Header() {
 
           <HandleNav to="about" className={styles.thumb_more}>
             <p>Ver mais</p>
-            <ArrowDown id={styles.thumb_arrow} size={48} color='#E1F3FD' weight='bold' />
+            <img id={styles.thumb_arrow} src="arrow.svg" alt="arrow" />
           </HandleNav>
         </div>
       </header>
