@@ -15,11 +15,9 @@ export function Footer() {
                     </div>
                     <h2>A cada linha de código e avanço em inteligência artificial, construímos hoje as soluções que vão transformar o amanhã.</h2>
                 </div>
-                <div id={styles.contact_form}>
-                    <img id={styles.icon_background} src="icon_background.svg" alt="" />
-                    <div id={styles.contact}>
-                        <ContactForm />
-                    </div>
+                <img id={styles.icon_background} src="icon_background.svg" alt="" />
+                <div id={styles.form_card}>
+                    <ContactForm />
                 </div>
             </div>
 
