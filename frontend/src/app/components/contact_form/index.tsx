@@ -3,6 +3,8 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { emailSchema, EmailFormData } from "./emailSchema";
 import { Span } from 'next/dist/trace';
+import { useEffect } from 'react';
+import axios from 'axios';
 
 export function ContactForm() {
     const {
@@ -14,8 +16,16 @@ export function ContactForm() {
     });
 
     const onSubmit = async (data: EmailFormData) => {
-        console.log("Enviando email...", data);
-    };
+        try {
+            const response = await axios.post('/api/contact', data);
+            if (response.status === 200) {
+                alert('Email enviado com sucesso!');
+            }
+        } catch (error) {
+            console.error('Erro ao enviar email:', error);
+            alert('Algo deu errado. Tente novamente mais tarde.');
+        }
+    };  
 
     return (
         <div className={styles.form_card}>
