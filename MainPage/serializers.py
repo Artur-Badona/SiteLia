@@ -12,3 +12,8 @@ class AlunoSerializer(serializers.ModelSerializer):
     class Meta:
         model = Aluno
         fields = ['id', 'nome', 'avatar', 'link']
+
+
+class ContactSerializer(serializers.Serializer):
+    email = serializers.EmailField()
+    message = serializers.CharField(min_length=1)

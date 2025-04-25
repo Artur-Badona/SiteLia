@@ -1,12 +1,11 @@
-import styles from './style.module.css';
+import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { emailSchema, EmailFormData } from "./emailSchema";
-import { Span } from 'next/dist/trace';
-import { useEffect } from 'react';
-import axios from 'axios';
+import styles from "./style.module.css"
 
 export function ContactForm() {
+    const [status, setStatus] = useState<string>("");
     const {
         register,
         handleSubmit,
@@ -17,15 +16,39 @@ export function ContactForm() {
 
     const onSubmit = async (data: EmailFormData) => {
         try {
-            const response = await axios.post('/api/contact', data);
-            if (response.status === 200) {
-                alert('Email enviado com sucesso!');
+            setStatus("Enviando...");
+
+            const response = await fetch("http://127.0.0.1:8000/api/contact/", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    "X-CSRFToken": getCookie("csrftoken") || "", // CSRF token if needed
+                },
+                body: JSON.stringify(data),
+                credentials: "same-origin", // Ensures cookies are sent along with the request
+            });
+
+            const result = await response.json();
+
+            if (response.ok) {
+                setStatus("Mensagem enviada com sucesso!");
+            } else {
+                setStatus(`Erro: ${result.error}`);
             }
         } catch (error) {
-            console.error('Erro ao enviar email:', error);
-            alert('Algo deu errado. Tente novamente mais tarde.');
+            setStatus("Erro ao enviar mensagem.");
+            console.error(error);
         }
-    };  
+    };
+
+    // Helper function to get CSRF token from cookies (if applicable)
+    function getCookie(name: string) {
+        if (typeof document === "undefined") return null;
+        const value = `; ${document.cookie}`;
+        const parts = value.split(`; ${name}=`);
+        if (parts.length === 2) return parts.pop()?.split(";").shift();
+        return null;
+    }
 
     return (
         <div className={styles.form_card}>
