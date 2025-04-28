@@ -80,6 +80,12 @@
         font-weight: 600;
         font-size: 1.5rem;
     }
+
+    .form_card .status_message {
+        color: #00bc55;
+        font-family: var(--font-lexend-400);
+        font-weight: 400;
+    }
 }
 
 @media (max-width: 1920px) {
@@ -162,6 +168,12 @@
         font-family: var(--font-lexend-600);
         font-weight: 600;
         font-size: 1.5rem;
+    }
+
+    .form_card .status_message {
+        color: #00bc55;
+        font-family: var(--font-lexend-400);
+        font-weight: 400;
     }
 }
 
@@ -247,6 +259,12 @@
         font-weight: 600;
         font-size: 1.25rem;
     }
+
+    .form_card .status_message {
+        color: #00bc55;
+        font-family: var(--font-lexend-400);
+        font-weight: 400;
+    }
 }
 
 @media (max-width: 1092px) {
@@ -330,6 +348,12 @@
         font-family: var(--font-lexend-600);
         font-weight: 600;
         font-size: 1rem;
+    }
+
+    .form_card .status_message {
+        color: #00bc55;
+        font-family: var(--font-lexend-400);
+        font-weight: 400;
     }
 }
 
@@ -416,6 +440,12 @@
         font-weight: 600;
         font-size: 1rem;
     }
+
+    .form_card .status_message {
+        color: #00bc55;
+        font-family: var(--font-lexend-400);
+        font-weight: 400;
+    }
 }
 
 @media (max-width: 512px) {
@@ -500,5 +530,11 @@
         font-family: var(--font-lexend-600);
         font-weight: 600;
         font-size: 1rem;
+    }
+
+    .form_card .status_message {
+        color: #00bc55;
+        font-family: var(--font-lexend-400);
+        font-weight: 400;
     }
 }

@@ -2,14 +2,16 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { emailSchema, EmailFormData } from "./emailSchema";
-import styles from "./style.module.css"
+import styles from "./style.module.css";
 
 export function ContactForm() {
     const [status, setStatus] = useState<string>("");
+
     const {
         register,
         handleSubmit,
         formState: { errors, isSubmitting },
+        reset // 🧹 get reset here directly
     } = useForm<EmailFormData>({
         resolver: zodResolver(emailSchema),
     });
@@ -22,16 +24,17 @@ export function ContactForm() {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
-                    "X-CSRFToken": getCookie("csrftoken") || "", // CSRF token if needed
+                    "X-CSRFToken": getCookie("csrftoken") || "",
                 },
                 body: JSON.stringify(data),
-                credentials: "same-origin", // Ensures cookies are sent along with the request
+                credentials: "same-origin",
             });
 
             const result = await response.json();
 
             if (response.ok) {
                 setStatus("Mensagem enviada com sucesso!");
+                reset(); // 🧹 Clear form inputs after success
             } else {
                 setStatus(`Erro: ${result.error}`);
             }
@@ -41,7 +44,6 @@ export function ContactForm() {
         }
     };
 
-    // Helper function to get CSRF token from cookies (if applicable)
     function getCookie(name: string) {
         if (typeof document === "undefined") return null;
         const value = `; ${document.cookie}`;
@@ -70,6 +72,7 @@ export function ContactForm() {
                 <button type="submit" disabled={isSubmitting}>
                     Entre em contato!
                 </button>
+                {status && <p className={styles.status_message}>{status}</p>}
             </form>
         </div>
     );
