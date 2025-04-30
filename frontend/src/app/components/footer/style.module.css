@@ -79,10 +79,20 @@
         font-family: var(--font-lexend-300);
         font-weight: 300;
         font-size: 1rem;
-        margin: 1rem 0 1.5rem;
+        margin: 1rem 0 1rem;
     }
 
     #footer_links a {
+        color: #FFFFFF;
+        font-family: var(--font-lexend-400);
+        font-weight: 400;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        text-decoration: none;
+        transition: text-decoration 0, 3s ease;
+    }
+
+    #footer_links p {
         color: #FFFFFF;
         font-family: var(--font-lexend-400);
         font-weight: 400;
@@ -214,10 +224,20 @@
         font-family: var(--font-lexend-300);
         font-weight: 300;
         font-size: 1rem;
-        margin: 1rem 0 1.5rem;
+        margin: 1rem 0 1rem;
     }
 
     #footer_links a {
+        color: #FFFFFF;
+        font-family: var(--font-lexend-400);
+        font-weight: 400;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        text-decoration: none;
+        transition: text-decoration 0, 3s ease;
+    }
+
+    #footer_links p {
         color: #FFFFFF;
         font-family: var(--font-lexend-400);
         font-weight: 400;
@@ -349,10 +369,20 @@
         font-family: var(--font-lexend-300);
         font-weight: 300;
         font-size: 0.75rem;
-        margin: 1rem 0 1.5rem;
+        margin: 1rem 0 1rem;
     }
 
     #footer_links a {
+        color: #FFFFFF;
+        font-family: var(--font-lexend-400);
+        font-weight: 400;
+        font-size: 0.75rem;
+        margin-bottom: 1rem;
+        text-decoration: none;
+        transition: text-decoration 0, 3s ease;
+    }
+
+    #footer_links p {
         color: #FFFFFF;
         font-family: var(--font-lexend-400);
         font-weight: 400;
@@ -484,10 +514,20 @@
         font-family: var(--font-lexend-300);
         font-weight: 300;
         font-size: 0.75rem;
-        margin: 1rem 0 1.5rem;
+        margin: 1rem 0 1rem;
     }
 
     #footer_links a {
+        color: #FFFFFF;
+        font-family: var(--font-lexend-400);
+        font-weight: 400;
+        font-size: 0.75rem;
+        margin-bottom: 1rem;
+        text-decoration: none;
+        transition: text-decoration 0, 3s ease;
+    }
+
+    #footer_links p {
         color: #FFFFFF;
         font-family: var(--font-lexend-400);
         font-weight: 400;
@@ -620,10 +660,20 @@
         font-family: var(--font-lexend-300);
         font-weight: 300;
         font-size: 0.75rem;
-        margin: 1rem 0 1.5rem;
+        margin: 1rem 0 1rem;
     }
 
     #footer_links a {
+        color: #FFFFFF;
+        font-family: var(--font-lexend-400);
+        font-weight: 400;
+        font-size: 0.75rem;
+        margin-bottom: 1rem;
+        text-decoration: none;
+        transition: text-decoration 0, 3s ease;
+    }
+
+    #footer_links p {
         color: #FFFFFF;
         font-family: var(--font-lexend-400);
         font-weight: 400;
@@ -761,11 +811,22 @@
         font-family: var(--font-lexend-300);
         font-weight: 300;
         font-size: 0.5rem;
-        margin: 1rem 0 1.5rem;
+        margin: 1rem 0 1rem;
         width: fit-content;
     }
 
     #footer_links a {
+        color: #FFFFFF;
+        font-family: var(--font-lexend-400);
+        font-weight: 400;
+        font-size: 0.5rem;
+        margin-bottom: 1rem;
+        text-decoration: none;
+        transition: text-decoration 0, 3s ease;
+        width: fit-content;
+    }
+
+    #footer_links p {
         color: #FFFFFF;
         font-family: var(--font-lexend-400);
         font-weight: 400;
