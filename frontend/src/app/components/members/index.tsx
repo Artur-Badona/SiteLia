@@ -21,11 +21,11 @@ export function Members() {
     const [alunos, setAlunos] = useState<Aluno[]>([]);
 
     useEffect(() => {
-        fetch('http://localhost:8000/api/professores/')
+        fetch('/api/professores/')
             .then(res => res.json())
             .then(data => setProfessores(data))
             .catch(err => console.error('Erro ao buscar professores:', err));
-        fetch('http://localhost:8000/api/alunos/')
+        fetch('/api/alunos/')
             .then(res => res.json())
             .then(data => setAlunos(data))
             .catch(err => console.error('Erro ao buscar alunos:', err));
