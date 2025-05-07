@@ -1,6 +1,5 @@
 import styles from './style.module.css'
 import { ProjectCard } from '../project_card';
-import { useState, useEffect } from "react";
 
 export function Projects() {
 

@@ -1,3 +1,5 @@
+'use client';
+
 type HandleNavProps = {
     to: string;
     children: React.ReactNode;

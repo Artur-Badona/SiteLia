@@ -1,4 +1,5 @@
-import { ArrowDown } from '@phosphor-icons/react/dist/ssr';
+'use client';
+
 import styles from './style.module.css'
 import { useState, useEffect } from "react";
 import { HandleNav } from './handleNav';

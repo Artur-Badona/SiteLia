@@ -1,3 +1,5 @@
+'use client';
+
 import styles from './style.module.css';
 import { MemberProfile } from '../member_profile';
 import { useEffect, useState } from 'react';
