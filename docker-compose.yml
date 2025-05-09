@@ -1,13 +1,11 @@
 services:
   backend:
-    build:
-      context: ./backend
-      dockerfile: Dockerfile
+    build: ./backend
     container_name: django-backend
     volumes:
       - static:/app/static
       - media:/app/media
-      - db: /app
+      - db:/app
     environment:
       - DEBUG=False
       - DJANGO_SETTINGS_MODULE=SiteLIA.settings
