@@ -7,6 +7,7 @@ services:
     volumes:
       - static:/app/static
       - media:/app/media
+      - db: /app
     environment:
       - DEBUG=False
       - DJANGO_SETTINGS_MODULE=SiteLIA.settings
@@ -54,6 +55,7 @@ services:
 volumes:
   static:
   media:
+  db:
 
 networks:
   app-network:
