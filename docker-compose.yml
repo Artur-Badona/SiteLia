@@ -4,13 +4,12 @@ services:
       context: ./backend
       dockerfile: Dockerfile
     container_name: django-backend
-    command: gunicorn core.wsgi:application --bind 0.0.0.0:8000
     volumes:
       - static:/app/static
       - media:/app/media
     environment:
       - DEBUG=False
-      - DJANGO_SETTINGS_MODULE=core.settings
+      - DJANGO_SETTINGS_MODULE=SiteLIA.settings
     expose:
       - "8000"
     networks:

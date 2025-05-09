@@ -16,17 +16,9 @@ WORKDIR /app
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
 
-# Copia dependências da etapa de build
-COPY --from=builder /usr/local /usr/local
-
-# Copia o código da aplicação
+COPY --from=builder /usr/local/lib/python3.11/site-packages /usr/local/lib/python3.11/site-packages
 COPY . .
 
-# Cria diretórios de mídia e estáticos
-RUN mkdir -p /app/media /app/static
-
-# Expõe a porta
 EXPOSE 8000
 
-# Usa gunicorn como servidor
 CMD ["gunicorn", "core.wsgi:application", "--bind", "0.0.0.0:8000"]
