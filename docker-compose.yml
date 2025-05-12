@@ -9,6 +9,7 @@ services:
     environment:
       - DEBUG=False
       - DJANGO_SETTINGS_MODULE=SiteLIA.settings
+      - DJANGO_ALLOWED_HOSTS=localhost,127.0.0.1,backend,nginx
     expose:
       - "8000"
     networks:

@@ -13,7 +13,7 @@ export function ContactForm() {
         register,
         handleSubmit,
         formState: { errors, isSubmitting },
-        reset // 🧹 get reset here directly
+        reset
     } = useForm<EmailFormData>({
         resolver: zodResolver(emailSchema),
     });
@@ -36,7 +36,7 @@ export function ContactForm() {
 
             if (response.ok) {
                 setStatus("Mensagem enviada com sucesso!");
-                reset(); // 🧹 Clear form inputs after success
+                reset();
             } else {
                 setStatus(`Erro: ${result.error}`);
             }

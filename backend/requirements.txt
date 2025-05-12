@@ -3,4 +3,4 @@ djangorestframework
 psycopg2-binary
 django-cors-headers
 Pillow
-gunicorn>=23.0.0
+gunicorn
