@@ -1,6 +1,8 @@
 Django>=4.2,<5.2.1
 djangorestframework
-psycopg2-binary
 django-cors-headers
 Pillow
 gunicorn
+pymysql
+django-environ
+cryptography
