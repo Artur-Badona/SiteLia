@@ -8,7 +8,7 @@ RUN npm install
 COPY . .
 RUN npm run build
 
-FROM node:18-alpine AS runner
+FROM node:18 AS builder
 
 WORKDIR /app
 
