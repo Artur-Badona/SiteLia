@@ -3,6 +3,4 @@ djangorestframework
 django-cors-headers
 Pillow
 gunicorn
-pymysql
 django-environ
-cryptography
