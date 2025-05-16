@@ -12,8 +12,6 @@ services:
       - DJANGO_ALLOWED_HOSTS=${DJANGO_ALLOWED_HOSTS}
     expose:
       - "8000"
-    networks:
-      - app-network
 
   frontend:
     build: ./frontend
@@ -24,8 +22,6 @@ services:
       - "3000"
     depends_on:
       - backend
-    networks:
-      - app-network
 
   nginx:
     image: nginx:latest
@@ -39,17 +35,6 @@ services:
     depends_on:
       - frontend
       - backend
-    networks:
-      - app-network
-      - ingress-network
-    deploy:
-      labels:
-        caddy: lia2.labs.unimar.br
-        caddy.reverse_proxy: "{{upstreams 80}}"
-      mode: replicated
-      restart_policy:
-        condition: any
-      replicas: 1
 
 volumes:
   static:
