@@ -60,8 +60,9 @@
     }
 
     #thumb {
-        background: rgb(0, 81, 146);
-        background: linear-gradient(180deg, rgba(0, 81, 146, 1) 0%, rgba(0, 114, 188, 1) 100%);
+        /* background: rgb(0, 81, 146);
+        background: linear-gradient(180deg, rgba(0, 81, 146, 1) 0%, rgba(0, 114, 188, 1) 100%); */
+        background-image: url('/thumb-image.jpg');
         height: 100vh;
         min-height: 100%;
         display: flex;
@@ -195,8 +196,11 @@
     }
 
     #thumb {
-        background: rgb(0, 81, 146);
-        background: linear-gradient(180deg, rgba(0, 81, 146, 1) 0%, rgba(0, 114, 188, 1) 100%);
+        /* background: rgb(0, 81, 146);
+        background: linear-gradient(180deg, rgba(0, 81, 146, 1) 0%, rgba(0, 114, 188, 1) 100%); */
+        background-image: url('/thumb-image.jpg');
+        background-size: cover;
+        background-position: center;
         height: 100vh;
         min-height: 100%;
         display: flex;
@@ -335,8 +339,9 @@
     }
 
     #thumb {
-        background: rgb(0, 81, 146);
-        background: linear-gradient(180deg, rgba(0, 81, 146, 1) 0%, rgba(0, 114, 188, 1) 100%);
+        /* background: rgb(0, 81, 146);
+        background: linear-gradient(180deg, rgba(0, 81, 146, 1) 0%, rgba(0, 114, 188, 1) 100%); */
+        background-image: url('/thumb-image.jpg');
         height: 100vh;
         min-height: 100%;
         display: flex;
@@ -475,8 +480,9 @@
     }
 
     #thumb {
-        background: rgb(0, 81, 146);
-        background: linear-gradient(180deg, rgba(0, 81, 146, 1) 0%, rgba(0, 114, 188, 1) 100%);
+        /* background: rgb(0, 81, 146);
+        background: linear-gradient(180deg, rgba(0, 81, 146, 1) 0%, rgba(0, 114, 188, 1) 100%); */
+        background-image: url('/thumb-image.jpg');
         height: 100vh;
         min-height: 100%;
         display: flex;
@@ -622,8 +628,9 @@
     }
 
     #thumb {
-        background: rgb(0, 81, 146);
-        background: linear-gradient(180deg, rgba(0, 81, 146, 1) 0%, rgba(0, 114, 188, 1) 100%);
+        /* background: rgb(0, 81, 146);
+        background: linear-gradient(180deg, rgba(0, 81, 146, 1) 0%, rgba(0, 114, 188, 1) 100%); */
+        background-image: url('/thumb-image.jpg');
         height: 100vh;
         min-height: 100%;
         display: flex;
