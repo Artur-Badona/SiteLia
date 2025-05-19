@@ -1,3 +1,5 @@
+version: '3.8'
+
 services:
   backend:
     build: ./backend
@@ -7,10 +9,10 @@ services:
       - media:/app/media
       - db:/app
     environment:
-      - DEBUG: ${DEBUG}
-      - DJANGO_SETTINGS_MODULE: ${DJANGO_SETTINGS_MODULE}
-      - DJANGO_ALLOWED_HOSTS: ${DJANGO_ALLOWED_HOSTS}
-      - EMAIL_HOST_PASSWORD: ${EMAIL_HOST_PASSWORD}
+      - DEBUG=${DEBUG}
+      - DJANGO_SETTINGS_MODULE=${DJANGO_SETTINGS_MODULE}
+      - DJANGO_ALLOWED_HOSTS=${DJANGO_ALLOWED_HOSTS}
+      - EMAIL_HOST_PASSWORD=${EMAIL_HOST_PASSWORD}
     expose:
       - "8000"
 
