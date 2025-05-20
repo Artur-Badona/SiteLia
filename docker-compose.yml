@@ -44,7 +44,7 @@ services:
       - ingress-network
     deploy:
       labels:
-        caddy: lia2.labs.unimar.br
+        caddy: lialab.labs.unimar.br
         caddy.reverse_proxy: "{{upstreams 80}}"
       mode: replicated
       restart_policy:
