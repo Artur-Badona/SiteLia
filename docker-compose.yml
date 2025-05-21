@@ -1,7 +1,6 @@
 services:
   backend:
-    build:
-      context: ./backend
+    image: pmdc777/sitelia-backend:latest
     volumes:
       - static:/app/static
       - media:/app/media
@@ -12,38 +11,42 @@ services:
       - DJANGO_ALLOWED_HOSTS=${DJANGO_ALLOWED_HOSTS}
       - EMAIL_HOST_PASSWORD=${EMAIL_HOST_PASSWORD}
     networks:
-      - app-network
-    restart: always
+      - default
+    deploy:
+      mode: replicated
+      replicas: 1
+      restart_policy:
+        condition: on-failure
+      placement:
+        constraints:
+          - node.role == manager
 
   frontend:
-    build:
-      context: ./frontend
+    image: pmdc777/sitelia-frontend:latest
     environment:
       - NODE_ENV=production
-    depends_on:
-      - backend
     networks:
-      - app-network
-    restart: always
+      - default
 
   nginx:
-    image: nginx:1.25.4
+    image: nginx:latest
     ports:
       - "8080:80"
     volumes:
       - ./nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
       - static:/app/static
       - media:/app/media
-    depends_on:
-      - frontend
-      - backend
     networks:
-      - app-network
+      - default
       - ingress-network
-    restart: always
-    labels:
-      caddy: lialab.labs.unimar.br
-      caddy.reverse_proxy: "{{upstreams 80}}"
+    deploy:
+      mode: replicated
+      replicas: 1
+      restart_policy:
+        condition: on-failure
+      labels:
+        caddy: lialab.labs.unimar.br
+        caddy.reverse_proxy: "{{upstreams 80}}"
 
 volumes:
   static:
@@ -51,6 +54,5 @@ volumes:
   db:
 
 networks:
-  app-network:
   ingress-network:
     external: true
