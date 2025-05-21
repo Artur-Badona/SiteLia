@@ -3,3 +3,4 @@ next-env.d.ts
 node_modules
 /backend/static/
 .env
+sitelia.pem
