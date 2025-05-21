@@ -1,6 +1,7 @@
 services:
   backend:
-    image: pmdc777/sitelia-backend:latest
+    build:
+      context: ./backend
     volumes:
       - static:/app/static
       - media:/app/media
@@ -15,7 +16,8 @@ services:
     restart: always
 
   frontend:
-    image: pmdc777/sitelia-frontend:latest
+    build:
+      context: ./frontend
     environment:
       - NODE_ENV=production
     depends_on:
@@ -25,7 +27,7 @@ services:
     restart: always
 
   nginx:
-    image: nginx:latest
+    image: nginx:1.25.4
     ports:
       - "8080:80"
     volumes:
