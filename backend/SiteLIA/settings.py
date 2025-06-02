@@ -24,6 +24,8 @@ SECRET_KEY = env.str('SECRET_KEY', 'fallback-secret')
 DEBUG = env.bool('DEBUG', 'False') == True
 
 ALLOWED_HOSTS = env.str('DJANGO_ALLOWED_HOSTS', '').split(',')
+SECURE_SSL_REDIRECT = True
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 
 # Application definition
