@@ -43,6 +43,7 @@ services:
     volumes:
       - certbot_certs:/etc/letsencrypt
       - certbot_webroot:/var/www/certbot
+    command: certonly --webroot -w /var/www/certibot --force-renewal --email arturbadona@gmail.com -d lialabcorretor.com --agree-tos
 
 volumes:
   static_data:
